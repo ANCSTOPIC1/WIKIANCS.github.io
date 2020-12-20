@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Challenges of gyroscopes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ANCS WIKIPEDIA</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team1.html">Team</a>
+          </li>
+                 <li class="nav-item">
+            <a class="nav-link" href="reflection.html">Reflections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ref.html">References</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/nice.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Challenges of using gyroscopes in the flight instrumentation and avionics systems</h1>
+            <h2 class="subheading">Nothing is perfect</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+		
+		 <h2 class="section-heading">Gyroscopes failure</h2>
+		 
+          <p>The most common cause of gyro instrument failure is bearing failure. It can be caused by one or more of the following variables:</p>
+				
+				<ul class="a">
+				<li>Normal wear due to time in service.</li>
+				<li>Adverse wear due to the instrument ingesting dirty air via a missing or defective gyro/or vacuum relief valve filter in a vacuum system.</li>
+				<li>Contamination by debris from a failed vacuum pump in a pressure system where the filter was inadequate and/or the system was not purged correctly following pump failure.</li>
+				<li>mpact damage (brinelling) to the gyro rotor and gimbal bearings. (In brinelling, the ball bearings smash into the race, creating tiny craters or pot holes and make for rough running.</li>
+				
+				<p>A gyro instrument’s definition of damage-causing shock or impact is distressingly inclusive. A heavy landing can cause damage, as can rough handling during installation, storage or transport. CASA Airworthiness Bulletin 31–008 Issue 2 says, ‘Dropping or handling a typical gyro instrument so that it impacts a hard surface from about 7 mm (¼ inch approx.) can result in something like a 14G shock to the gyro which can brinell the bearings and result in vibration, accelerated bearing wear, loss of gyro RPM and excessive heading drift in directional gyros. While some directional and vertical gyro designs may incorporate vibration isolation absorbers, the rate gyro (turn and bank) may not, making it particularly sensitive to even light handling shocks.</p>
+          <hr>
+          <h2 class="section-heading">Drawbacks of Ring Laser Gyroscopes</h2>
+
+          <p>The two RLG counter-propagative waves experience a lock-in effect at low rotation rates usually below 100°/h) that prevents direct measurement around zero. The RLG utilizes a mechanical dither to overcome this dead-zone effect, which degrades the theoretical rate of measurement noise by the order of magnitude. It also produces vibrations, requiring costly damping mechanisms to limit the increase in aircraft acoustic signature.</p>
+	<a href="#">
+            <img class="img-fluid" src="img/ring.png" alt="">
+          </a>
+		   <span class="caption text-muted">Schematic of a Ring Laser Gyroscope</span>
+          <p>A sealed cavity filled with a mixture of helium and neon gases is also used by RLGs as a medium to propagate the laser; it is considerably harder to maintain. Since the cavity can not be perfectly hermetically sealed, there is some residual gas leakage that limits the RLG's life. There is also a wearing-out problem with the high-voltage discharge electrodes that excite the amplifying gas. As a consequence, RLGs require expensive retrofits every five to seven years. </p>
+<hr>
+		<h2 class="section-heading">Drawbacks of Fibre Optic Gyroscopes</h2>
+
+          <p>Although there are high-impact applications such as gun-pointing systems, high-performance space applications, navigation system fiber optic gyroscopes, navigation systems for inertial missiles, remotely operated vehicles, autonomous unmanned vehicles. However, FOGs often need to be paired to overcome their sensitivity to vibration with multi-axis FOGs and accelerometers. Due to higher calibration requirements, FOGs also have longer production times. A detectable angular velocity is limited to +/- π/2 rad with respect to the phase difference due to the Sagnac effect. </p>
+<a href="#">
+            <img class="img-fluid" src="img/fibre.jpg" alt="">
+          </a>
+		   <span class="caption text-muted">Image of a Fiber Optic Gyroscope</span>
+		   <hr>
+          <h2 class="section-heading">Drawbacks of MEMS Gyroscopes</h2>
+
+
+          <p>The MEMS-based gyroscope (MEMS) has less temperature, humidity and stress stability, some of which can be compensated by software, providing more FOG or RLG integration errors, often with different performance across multiple units.</p>
+		  
+		  <a href="#">
+            <img class="center" src="img/mems2.jpg" alt="">
+          </a>
+		   <span class="caption text-muted">MEMS measurements</span>
+		   
+		  <p>MEMS gyroscope versions are available at lower cost, the free-moving gyroscope depends on the Earth's rotation, so gyroscopes can not be used for navigation purposes by fast-moving objects moving from east to west. Despite the non-applicability of navigation use, however many companies have invested and researched in the aviation use of the MEMS gyroscope.</p>
+
+          
+          
+
+            <p>Click the link to view the 
+			<a href="team1.html">Team</a>,
+		  
+            <a href="reflection.html">Team reflections</a>,
+           
+			<a href="ref.html">Team references</a>.
+			
+			</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; Nicholas Ho 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
